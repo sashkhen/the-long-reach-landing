@@ -26,25 +26,44 @@ html, body {
 .head--bg {
   position: absolute;
   top: 0;
-  bottom: 0;
-  left: -50%;
-  right: -50%;
+  bottom: 50%;
+  left: -10%;
+  right: -10%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-.head--bg-bottom {
-  background-image: url('../img/bg_00.png');
+.head--bg-back {
+  background-image: url('../img/assets/back.png');
 }
 
-.head--bg-top {
-  background-image: url('../img/bg_01.png');
+.head--bg-front {
+  background-image: url('../img/assets/front.png');
+}
+
+.head--bg-g-off {
+  background-image: url('../img/assets/girlyanda-off.png');
+}
+
+.head--bg-g-on {
+  background-image: url('../img/assets/girlyanda-on.png');
+  animation: opacity .5s ease-out infinite alternate;
+}
+
+.head--bg-alert {
+  background-image: url('../img/assets/trevoga.png');
+  animation: opacity .5s ease-out infinite alternate;
+}
+
+.head--bg-dark {
+  background-color: rgba(0,0,0, .5);
+  animation: opacity .5s ease-out .5s infinite alternate;
 }
 
 .content {
   position: relative;
-  margin: 100vh auto 0;
+  margin: 50vh auto 0;
   padding: 50px 30px;
   width: 100%;
   max-width: 700px;
@@ -52,4 +71,14 @@ html, body {
   font-family: Arial, sans-serif;
   letter-spacing: 2px;
   line-height: 1.5;
+}
+
+@-webkit-keyframes opacity {
+  0%   {opacity:1;}
+  100% {opacity:0;}
+}
+
+@keyframes opacity {
+  0%   {opacity:1;}
+  100% {opacity:0;}
 }

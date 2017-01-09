@@ -20,5 +20,5 @@ $(document).ready(function() {
   }
 
   var controller = new ScrollMagic.Controller();
-  moveContent(controller);
+  // moveContent(controller);
 });
